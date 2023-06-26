@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: white;}
+    body {background-image: url("https://static.vecteezy.com/system/resources/previews/018/991/303/non_2x/soft-gradient-abstract-in-pastel-purple-and-pink-colors-gradient-background-blurred-gradient-texture-decorative-element-wallpaper-vector.jpg");
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+    
+   </style>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+
+  <body>
+    <div class="container" align="center">
+        <div class="row" align="center">
+            <div class="col-lg-8  offset-lg-2" align="center"> 
+                <h1 class="mt-5" align="center">Registration</h1><br><br><br><br><br>
+                <div class="reg">
+                    <div class="newimg">
+                    <img id="panda" src="https://media.istockphoto.com/id/1199547398/vector/cute-polar-bear-working-on-a-laptop-vector-illustration.jpg?s=612x612&w=0&k=20&c=axSHpuNyx9th47mlJYONaYAz8TSBjLSQX9-idmxT9jE=">
+                    </div><br><br>
+                <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                   <div class="msg">{{ msg }}</div>
+                   <label for="labels"><b>Enter Your Name:-</b></font></label>
+                   <input type="text" placeholder="Enter Your name" name="labels" required><br><br><br>
+                   <div class="inputimg">
+                   <label for="images" id="uploadimg"><b>Upload Your Image:-</b></font></label>
+                   <input type="file" id="images" name="images"; accept="image/*" required><br><br><br>
+                   </div>
+                   <input type="submit" class="btn" value="Sign Up">
+                </div>>
+                </form><br><br><br>
+                <p><font color="white" >Already Registered! Please</font><a class="bottom" href="{{url_for('face_login')}}"><font color="black"> Login</font></a></p>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

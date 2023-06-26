@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    body {
+      background-color: rgb(240, 229, 250);
+    }
+   </style>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+
+  <body>
+    <br><br><br><br><br>
+    <div class="IMAGE">
+      <img id="welcomeimg" src="https://blog.vantagecircle.com/content/images/2020/07/welcome-messages-for-employees.png" alt="Welcome" >
+    </div>
+    <div  class="log" align="center">
+      <a href="{{ url_for('logout') }}" class="btn">Logout</a><br>
+      </div>
+  </body>
+
+
+</html>
